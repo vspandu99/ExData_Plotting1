@@ -12,6 +12,6 @@ len <- length(epcDS$Global_active_power)
 png("plot2.png", width=480, height=480)
 plot(epcDS$Global_active_power,type="l",ylab="Global Active Power (kilowatts)", xlab="",xaxt = "n")
 
-# update graph with axis function and add tick marks as required and name them.
+# update graph with axis function and add tick marks as required and name them with the week names.
 axis(side=1, at=c("1",len/2,len), c("Thu","Fri","Sat"))
 dev.off()
